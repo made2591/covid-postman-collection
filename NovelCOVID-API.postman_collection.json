@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "8cf09fcb-2b9b-4b6a-bee3-a4df92731079",
+		"name": "NovelCOVID API (github.com/NovelCOVID/API)",
+		"description": "API for Current cases and more stuff about COVID-19 or the Novel Coronavirus Strain.\n\n- [Website](https://github.com/NovelCOVID/API)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://corona.lmao.ninja/all",
+					"protocol": "https",
+					"host": [
+						"corona",
+						"lmao",
+						"ninja"
+					],
+					"path": [
+						"all"
+					]
+				},
+				"description": "Returns all total cases, recovery, and deaths."
+			},
+			"response": []
+		},
+		{
+			"name": "Countries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://corona.lmao.ninja/countries?sort=country",
+					"protocol": "https",
+					"host": [
+						"corona",
+						"lmao",
+						"ninja"
+					],
+					"path": [
+						"countries"
+					],
+					"query": [
+						{
+							"key": "sort",
+							"value": "country"
+						}
+					]
+				},
+				"description": "Returns data of all countries that has COVID-19."
+			},
+			"response": []
+		},
+		{
+			"name": "Country",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://corona.lmao.ninja/countries/:country",
+					"protocol": "https",
+					"host": [
+						"corona",
+						"lmao",
+						"ninja"
+					],
+					"path": [
+						"countries",
+						":country"
+					],
+					"variable": [
+						{
+							"key": "country",
+							"value": "USA"
+						}
+					]
+				},
+				"description": "Returns data of a specific country."
+			},
+			"response": []
+		},
+		{
+			"name": "States",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://corona.lmao.ninja/states",
+					"protocol": "https",
+					"host": [
+						"corona",
+						"lmao",
+						"ninja"
+					],
+					"path": [
+						"states"
+					]
+				},
+				"description": "Returns all United States of America and their Corona data."
+			},
+			"response": []
+		},
+		{
+			"name": "John HOpkins CSSE Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://corona.lmao.ninja/jhucsse",
+					"protocol": "https",
+					"host": [
+						"corona",
+						"lmao",
+						"ninja"
+					],
+					"path": [
+						"jhucsse"
+					]
+				},
+				"description": "Return data from the John Hopkins CSSE Data Repository (Provinces and such)."
+			},
+			"response": []
+		},
+		{
+			"name": "Historical Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://corona.lmao.ninja/historical",
+					"protocol": "https",
+					"host": [
+						"corona",
+						"lmao",
+						"ninja"
+					],
+					"path": [
+						"historical"
+					]
+				},
+				"description": "Get historical data from the start of 2020. (JHU CSSE GISand Data)."
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "56a7c819-edb6-42ce-a607-4033061d1833",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "66924868-5cb0-47ec-b247-220d12ffebe4",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
